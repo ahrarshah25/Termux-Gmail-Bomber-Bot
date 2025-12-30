@@ -1,7 +1,8 @@
 #!/bin/bash
 
-echo "🔹 Installing dependencies..."
-npm install
+clear
 
-echo "🚀 Starting Termux Mail Bot..."
+# hide npm logs
+npm install --silent >/dev/null 2>&1
+
 node cli.js
